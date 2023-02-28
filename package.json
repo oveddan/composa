@@ -21,5 +21,13 @@
   "scripts": {
     "postinstall": "preconstruct dev"
   },
-  "workspaces": ["examples/*", "packages/*"]
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  }
 }
