@@ -1,0 +1,44 @@
+{
+  "name": "@composa/chain",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": false,
+  "source": "src/index.ts",
+  "main": "dist/composa-chain.cjs.js",
+  "module": "dist/composa-chain.esm.js",
+  "types": "dist/composa-chain.cjs.d.ts",
+  "sideEffects": false,
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/glob": "^8.0.0",
+    "@types/jest": "^29.1.1",
+    "@types/node": "^18.0.6",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "@oveddan-behave-graph/core": "*",
+    "@oveddan-behave-graph/flow": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactflow": "^11.1.1"
+  }
+}

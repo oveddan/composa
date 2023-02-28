@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "baseUrl": ".",
+    "paths": {
+      "@behave-graph/core": ["../core/src"],
+      "@/*": ["src/*"],
+    }
+  },
+  "include": ["./src"]
+}
